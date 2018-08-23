@@ -1,0 +1,43 @@
+{
+	"name": "@ky-is/tailwindcss-plugin-width-height",
+	"version": "0.0.0",
+	"description": "Square `.wh-*` size utility classes plugin for Tailwind css",
+	"author": "Kyle Coburn",
+	"license": "ISC",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"prepare": "rimraf dist && tsc && sed -i '' -e $'s/    /\t/g' $(find dist -type f) && jest",
+		"test": "jest"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ky-is/tailwindcss-plugin-width-height.git"
+	},
+	"bugs": {
+		"url": "https://github.com/ky-is/tailwindcss-plugin-width-height/issues"
+	},
+	"homepage": "https://github.com/ky-is/tailwindcss-plugin-width-height#readme",
+	"eslintConfig": {
+		"extends": "@ky-is/eslint-config/typescript"
+	},
+	"eslintIgnore": [
+		"dist"
+	],
+	"files": [
+		"dist",
+		"types"
+	],
+	"devDependencies": {
+		"@ky-is/eslint-config": "^1.2.0",
+		"@types/jest": "^23.3.1",
+		"eslint": "^5.4.0",
+		"eslint-plugin-typescript": "^0.12.0",
+		"jest": "^23.5.0",
+		"rimraf": "^2.6.2",
+		"ts-jest": "^23.1.4",
+		"tslint": "^5.11.0",
+		"typescript": "^3.0.1",
+		"typescript-eslint-parser": "^18.0.0"
+	}
+}
