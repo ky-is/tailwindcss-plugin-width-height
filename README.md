@@ -1,9 +1,20 @@
 # tailwindcss-plugin-width-height
 
-Square `.wh-*` size utility classes for Tailwind css.
+Square `.wh-*` size utility classes for Tailwind css. For when you want a DRY way to describe a square-sized element (profile image, close button, div container, etc.).
 
 ```bash
 npm install --save-dev @ky-is/tailwindcss-plugin-width-height
+```
+
+## Example
+
+These are equivalent:
+```html
+<img class="wh-16" />
+```
+
+```html
+<img class="w-16 h-16" />
 ```
 
 ## Config
