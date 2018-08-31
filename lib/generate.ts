@@ -1,7 +1,7 @@
 import { KeyedObject } from '../types'
 
 export function generateClassesFor (sizes: KeyedObject<string>, escape: (string: string) => string) {
-	const classes: { [key: string]: KeyedObject<string> } = {}
+	const classes: KeyedObject<KeyedObject<string>> = {}
 	for (const key in sizes) {
 		const value = sizes[key]
 		const escapedClassName = escape(`wh-${key}`)
