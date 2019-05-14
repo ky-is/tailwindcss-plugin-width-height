@@ -4,12 +4,12 @@ Square `.wh-*` size utility classes for Tailwind css. For when you want a DRY wa
 
 For Tailwind v1.0:
 ```bash
-npm install --save-dev @ky-is/tailwindcss-plugin-width-height@next
+npm install --save-dev @ky-is/tailwindcss-plugin-width-height
 ```
 
 For Tailwind v0.x:
 ```bash
-npm install --save-dev @ky-is/tailwindcss-plugin-width-height@0.1.1
+npm install --save-dev @ky-is/tailwindcss-plugin-width-height@0
 ```
 
 ## Example
